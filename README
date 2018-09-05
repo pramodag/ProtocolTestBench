@@ -1,0 +1,6 @@
+Please refer to the github link: https://github.com/pramodag/ProtocolTestBench for latest code
+
+To execute 
+*modify file Model/Fronious_Spec.json and set the connection parameters(Modbus TCP)
+*Execute file PrptocolTestBench.py
+

@@ -1,0 +1,117 @@
+{
+    "id1": {
+        "sunspec_model_id": 1,
+        "starting_address": 40005
+    },
+    "id2": {
+        "sunspec_model_id": 103,
+        "starting_address": 40072
+    },
+    "Evt2": {
+        "type": "bitfield32",
+        "access": "r",
+        "mandatory": "true",
+        "len": 2,
+        "address": 40112,
+        "range": {
+            "1": "None"
+        },
+        "label": "Event Bitfield 2",
+        "description": "Reserved for future use"
+    },
+    "EvtVnd2": {
+        "type": "bitfield32",
+        "access": "r",
+        "mandatory": "",
+        "len": 2,
+        "address": 40116,
+        "range": {
+            "1": "None"
+        },
+        "label": "Vendor Event Bitfield 2",
+        "description": "Vendor defined events"
+    },
+    "StVnd": {
+        "type": "enum16",
+        "access": "r",
+        "mandatory": "",
+        "len": 1,
+        "address": 40109,
+        "range": {
+            "1": "I_STATUS_OFF",
+            "2": "I_STATUS_SLEEPING",
+            "3": "I_STATUS_STARTING",
+            "5": "I_STATUS_THROTTLED",
+            "6": "I_STATUS_SHUTTING_DOWN",
+            "7": "I_STATUS_FAULT",
+            "8": "I_STATUS_STANDBY",
+            "9": "I_STATUS_NO_BUSINIT",
+            "10": "I_STATUS_NO_COMM_INV",
+            "11": "I_STATUS_SN_OVERCURRENT",
+            "12": "I_STATUS_BOOTLOAD",
+            "13": "I_STATUS_AFCI"
+        },
+        "label": "Vendor Operating State",
+        "description": "Vendor specific operating state code"
+    },
+    "EvtVnd3": {
+        "type": "bitfield32",
+        "access": "r",
+        "mandatory": "",
+        "len": 2,
+        "address": 40118,
+        "range": {
+            "0": "None"
+        },
+        "label": "Vendor Event Bitfield 3",
+        "description": "Vendor defined events"
+    },
+    "EvtVnd1": {
+        "type": "bitfield32",
+        "access": "r",
+        "mandatory": "",
+        "len": 2,
+        "address": 40114,
+        "range": {
+            "0": "None"
+        },
+        "label": "Vendor Event Bitfield 1",
+        "description": "Vendor defined events"
+    },
+    "EvtVnd4": {
+        "type": "bitfield32",
+        "access": "r",
+        "mandatory": "",
+        "len": 2,
+        "address": 40120,
+        "range": {
+            "0": "None"
+        },
+        "label": "Vendor Event Bitfield 4",
+        "description": "Vendor defined events"
+    },
+    "Pad": {
+        "type": "pad",
+        "description": "Force even alignment",
+        "len": 1,
+        "address": 40070,
+        "range": {
+            "101": "Single Phase",
+            "102": "Split Phase",
+            "103": "Three Phase"
+        },
+        "mandatory": "",
+        "label": "",
+        "access": "r"
+    },
+    "Hz": {
+        "type": "uint16",
+        "description": "Line Frequency",
+        "len": 1,
+        "address": 40086,
+        "range":"4900...5100",
+        "mandatory": "true",
+        "label": "Hz",
+        "access": "r"
+    }
+}

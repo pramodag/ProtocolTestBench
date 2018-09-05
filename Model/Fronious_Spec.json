@@ -1,0 +1,16 @@
+{
+    "header": {
+        "protocol": "Modbus",
+        "commInterface": "TCP",
+        "connection":{
+            "ip":"192.168.2.3",
+            "port":502
+        },
+        "ProtocolImplClass":"ModbusTCPMaster",
+        "IPValidatorImplClass":"SunSpecIPValidator",
+        "OPValidatorClass":"ModBusOPValidator",
+        "docLinks": [
+            "./Model/fronius_sunspec.json"
+        ]
+    }
+}

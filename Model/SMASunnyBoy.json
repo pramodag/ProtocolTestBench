@@ -1,0 +1,12 @@
+{
+    "header": {
+        "protocol": "Modbus",
+        "commInterface": "RS485",
+        "addressType": "decimal",
+        "docLinks": [
+            "/home/pramod/Documents/Thesis/Project/Model/base.json",
+            "/home/pramod/Documents/Thesis/Project/Model/SunSpec.json",
+            "/home/pramod/Documents/Thesis/Project/Model/sma.json"
+        ]
+    }
+}

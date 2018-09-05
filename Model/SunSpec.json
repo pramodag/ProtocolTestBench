@@ -1,0 +1,40 @@
+{"AAC" :{ "type":"unit16" , "access":"RO" },
+"AphL1" :{ "type":"unit16" , "access":"RO" },
+"AphL2" :{ "type":"unit16" , "access":"RO" },
+"AphL3" :{ "type":"unit16" , "access":"RO" },
+"A_SF" :{ "type":"sunssf" , "access":"RO" },
+
+"UphL1L2" :{ "type":"unit16" , "access":"RO" },
+"UphL2L3" :{ "type":"unit16" , "access":"RO" },
+"UphL3L1" :{ "type":"unit16" , "access":"RO" },
+"UphL1N" :{ "type":"unit16" , "access":"RO" },
+"UphL2N" :{ "type":"unit16" , "access":"RO" },
+"UphL3N" :{ "type":"unit16" , "access":"RO" },
+"V_SF" :{ "type":"sunssf" , "access":"RO" },
+
+"W" :{ "type":"unit16" , "access":"RO" },
+"W_SF" :{ "type":"sunssf" , "access":"RO" },
+"Hz" :{ "type":"unit16" , "access":"RO" },
+"Hz_SF" :{ "type":"sunssf" , "access":"RO" },
+"VA" :{ "type":"unit16" , "access":"RO" },
+"VA_SF" :{ "type":"sunssf" , "access":"RO" },
+"VAr" :{ "type":"unit16" , "access":"RO" },
+"VAr_SF" :{ "type":"sunssf" , "access":"RO" },
+"TWH" :{ "type":"int16" , "access":"RO" },
+"TWH_SF" :{ "type":"sunssf" , "access":"RO" },
+
+"DCW" :{ "type":"unit16" , "access":"RO" },
+"DCW_SF" :{ "type":"sunssf" , "access":"RO" },
+"IntC" :{ "type":"int16" , "access":"RO" },
+"IntC_SF" :{ "type":"sunssf" , "access":"RO" },
+
+
+"OPST" :{ "description":"Operating status", "dataType":"enum", "type":"enum16",
+        "range":{"1":"off","2":"waiting for PV","3":"Starting","4":"MPP","5":"Regulated","6":"Shutting down",
+                "7":"Error","8":"Waiting for grid"}, "access":"RO" },
+"DERTyp" :{ "description":"Device type", "dataType":"enum", "type":"enum16", "access":"RO",
+        "range":{"4":"PV device"} },
+        
+"WRtg" :{ "description":"Continuous active power capability", "dataType":"float", "type":"unit16", "access":"RO"},
+"WRtg_SF" :{ "description":"Scale factor continuous active power capability", "dataType":"float", "type":"sunssf", "access":"RO"}
+}

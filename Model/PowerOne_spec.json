@@ -1,0 +1,23 @@
+{
+    "header": {
+        "protocol": "Serial",
+        "commInterface": "RS485",
+        "addressType": "decimal",
+        "docLinks": [
+            "/home/pramod/Documents/Thesis/Project/Model/base.json",
+            "/home/pramod/Documents/Thesis/Project/Model/powerone.json"
+        ],
+        "RequestPacket": {
+            "length": "10",
+            "header": "${address}",
+            "footer": "${CRC_L}${CRC_H}",
+            "crcAlgo": "crc algo"
+        },
+        "responsePacket": {
+            "length": "8",
+            "header": "",
+            "footer": "${CRC_L}${CRC_H}",
+            "crcAlgo": "crc algo"
+        }
+    }
+}

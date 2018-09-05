@@ -1,0 +1,90 @@
+{
+    "Sts": {
+        "access": "r",
+        "len": "",
+        "address": 4004,
+        "mandatory": "true",
+        "type": "enum16",
+        "description": "Status of last write operation",
+        "label": "Status"
+    },
+    "N": {
+        "access": "rw",
+        "len": "",
+        "address": 4012,
+        "mandatory": "true",
+        "type": "uint16",
+        "description": "Number of registers comprising the digital signature.",
+        "label": "N"
+    },
+    "Alm": {
+        "access": "",
+        "len": "",
+        "address": 4009,
+        "mandatory": "true",
+        "type": "enum16",
+        "description": "Bitmask alarm code",
+        "label": "Alarm"
+    },
+    "RqSeq": {
+        "access": "r",
+        "len": "",
+        "address": 4003,
+        "mandatory": "true",
+        "type": "uint16",
+        "description": "Sequence number from the request",
+        "label": "Request Sequence"
+    },
+    "Rsrvd": {
+        "type": "pad",
+        "len": "",
+        "address": 4010,
+        "access": "r",
+        "mandatory": "true"
+    },
+    "Seq": {
+        "access": "r",
+        "len": "",
+        "address": 4008,
+        "mandatory": "true",
+        "type": "uint16",
+        "description": "Sequence number of response",
+        "label": "Sequence"
+    },
+    "Ts": {
+        "access": "r",
+        "len": "",
+        "address": 4005,
+        "mandatory": "true",
+        "type": "uint32",
+        "description": "Timestamp value is the number of seconds since January 1, 2000",
+        "label": "Timestamp"
+    },
+    "Ms": {
+        "access": "r",
+        "len": "",
+        "address": 4007,
+        "mandatory": "true",
+        "type": "uint16",
+        "description": "Millisecond counter 0-999",
+        "label": "Milliseconds"
+    },
+    "DS": {
+        "access": "rw",
+        "len": "",
+        "address": 4003,
+        "mandatory": "",
+        "type": "uint16",
+        "description": "Digital Signature",
+        "label": "DS"
+    },
+    "Alg": {
+        "access": "r",
+        "len": "",
+        "address": 4011,
+        "mandatory": "true",
+        "type": "enum16",
+        "description": "Algorithm used to compute the digital signature",
+        "label": "Algorithm"
+    }
+}
